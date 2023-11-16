@@ -2,17 +2,16 @@ import contactImg from "../assets/img/meeting.png";
 export default function Contact() {
   return (
     <>
-      <article className="flex flex-wrap gap-8 dark:text-bone-100 justify-center px-8 mt-24">
+      <article
+        id="contato"
+        className="flex flex-wrap gap-8 dark:text-bone-100 justify-center px-8 mt-24"
+      >
         <div className="flex flex-col">
           <h1 className="text-3xl font-semibold">
             E aí, vamos trabalhar juntos?
           </h1>
           <h2 className="text-lg font-semibold mt-1">
-            Escolha a rede social e converse comigo{" "}
-            <span className="ml-1 text-2xl dark:text-indigo-500 text-indigo-600">
-              {" "}
-              ; )
-            </span>
+            Escolha a rede social e converse comigo
           </h2>
           <h2 className="flex items-center mt-3 text-lg font-semibold">
             <i className="fa-brands fa-square-whatsapp text-3xl mr-2"></i>
