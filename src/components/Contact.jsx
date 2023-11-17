@@ -1,4 +1,7 @@
 import contactImg from "../assets/img/meeting.png";
+import { motion } from "framer-motion";
+import { slideInFromLeft, slideInFromRight } from "../utils/motion";
+
 export default function Contact() {
   return (
     <>
@@ -6,7 +9,13 @@ export default function Contact() {
         id="contato"
         className="flex flex-wrap gap-8 dark:text-bone-100 justify-center px-8 mt-24"
       >
-        <div className="flex flex-col">
+        <motion.div
+          variants={slideInFromLeft()}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+          className="flex flex-col"
+        >
           <h1 className="text-3xl font-semibold">
             E aí, vamos trabalhar juntos?
           </h1>
@@ -44,10 +53,15 @@ export default function Contact() {
               <i className="cursor-pointer hover:text-indigo-600 hover:scale-125 fa-brands fa-square-instagram"></i>
             </a>
           </div>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div
+          variants={slideInFromRight()}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+        >
           <img className="w-96" src={contactImg} alt="" />
-        </div>
+        </motion.div>
       </article>
     </>
   );

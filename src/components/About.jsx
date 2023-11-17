@@ -1,11 +1,20 @@
+import { motion } from "framer-motion";
+import { slideInFromLeft } from "../utils/motion";
+
 export default function About() {
   return (
     <>
-      <article
+      <motion.article
         id="about"
         className="flex text-white dark:bg-indigo-500 bg-indigo-600 justify-center py-20 mt-24 w-full"
       >
-        <div className="flex flex-col text-center w-4/5 lg:w-6/12">
+        <motion.div
+          variants={slideInFromLeft(0.5, -100)}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true, amount: 0.4 }}
+          className="flex flex-col text-center w-4/5 lg:w-6/12"
+        >
           <h1 className="text-3xl mb-5">Muito prazer em conhecê-lo!</h1>
           <p className="text-lg">
             Sou um jovem completamente apaixonado por tecnologia, especialmente
@@ -15,8 +24,8 @@ export default function About() {
             muito confiante em minhas habilidades e me sinto pronto para dar o
             próximo passo.
           </p>
-        </div>
-      </article>
+        </motion.div>
+      </motion.article>
     </>
   );
 }

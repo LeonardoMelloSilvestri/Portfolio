@@ -1,3 +1,6 @@
+import { motion } from "framer-motion";
+import { slideInFromLeft } from "../utils/motion";
+
 export default function Projetos() {
   const projetos = [
     {
@@ -32,7 +35,11 @@ export default function Projetos() {
 
   return (
     <>
-      <article
+      <motion.article
+        variants={slideInFromLeft(0.5)}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
         id="projetos"
         className="flex flex-col items-center gap-8 mt-24 px-8 md:px-24"
       >
@@ -47,7 +54,7 @@ export default function Projetos() {
             </div>
           ))}
         </div>
-      </article>
+      </motion.article>
     </>
   );
 }

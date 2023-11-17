@@ -9,8 +9,8 @@ export default function Navbar() {
     <>
       <header>
         <motion.nav
-          variants={slideInFromTop}
-          initial="inital"
+          variants={slideInFromTop(0.3)}
+          initial="initial"
           animate="animate"
         >
           <div className="mx-auto max-w-7xl px-4 lg:px-8">
