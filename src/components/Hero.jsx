@@ -6,7 +6,7 @@ export default function Hero() {
     <>
       <article
         id="hero"
-        className="flex 100vh flex-wrap justify-center items-center gap-16 mt-12 sm:mt-16 px-8 dark:text-bone-100"
+        className="flex 100vh flex-wrap justify-center items-center gap-10 mt-12 sm:mt-16 px-8 dark:text-bone-100"
       >
         <div>
           <h1 className="text-4xl font-bold mb-2 sm:mb-1">
@@ -49,11 +49,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="">
-          <img
-            className="hero-img w-60 lg:w-72 min-[909px]:w-56"
-            src={hero}
-            alt=""
-          />
+          <img className="hero-img w-60" src={hero} alt="" />
         </div>
       </article>
     </>

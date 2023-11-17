@@ -1,3 +1,6 @@
+import { motion } from "framer-motion";
+import { slideInFromTop } from "../utils/motion.js";
+
 export default function Navbar() {
   function toggleTheme() {
     document.documentElement.classList.toggle("dark");
@@ -5,7 +8,11 @@ export default function Navbar() {
   return (
     <>
       <header>
-        <nav>
+        <motion.nav
+          variants={slideInFromTop}
+          initial="inital"
+          animate="animate"
+        >
           <div className="mx-auto max-w-7xl px-4 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
               <div className="flex flex-1 justify-start sm:items-stretch">
@@ -58,7 +65,7 @@ export default function Navbar() {
               </div>
             </div>
           </div>
-        </nav>
+        </motion.nav>
       </header>
     </>
   );
