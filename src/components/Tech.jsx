@@ -69,7 +69,7 @@ export default function Tech() {
       <motion.article
         variants={slideInFromLeft()}
         initial="initial"
-        whileInView="animate"
+        animate="animate"
         viewport={{ once: true }}
         id="tech"
         className="flex flex-col items-center gap-8 mt-16 px-4"
