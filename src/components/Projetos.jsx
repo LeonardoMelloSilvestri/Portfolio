@@ -8,7 +8,7 @@ export default function Projetos() {
       name: "Top Cars",
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero odio impedit recusandae nobis.",
-      url: "LeonardoMelloSilvestri.github.io/TopCars",
+      url: "https://LeonardoMelloSilvestri.github.io/TopCars",
     },
     {
       id: 2,
@@ -46,12 +46,14 @@ export default function Projetos() {
         <h1 className="text-3xl dark:text-bone-100 font-semibold">Projetos</h1>
         <div className="flex flex-wrap gap-6 w-full">
           {projetos.map((projeto) => (
-            <div
+            <a
               key={projeto.id}
-              className="flex justify-center items-center rounded-2xl flex-auto w-80 h-60 text-white dark:bg-indigo-500 bg-indigo-600"
+              href={projeto.url}
+              target="__blank"
+              className="flex justify-center cursor-pointer items-center rounded-2xl flex-auto w-80 h-60 text-white dark:bg-indigo-500 bg-indigo-600"
             >
               <h1 className="text-2xl">{projeto.name}</h1>
-            </div>
+            </a>
           ))}
         </div>
       </motion.article>
