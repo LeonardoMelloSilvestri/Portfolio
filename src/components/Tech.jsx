@@ -1,66 +1,80 @@
 import { motion } from "framer-motion";
 import { slideInFromLeft } from "../utils/motion";
+
+import html5 from "../assets/icons/html5.png";
+import css3 from "../assets/icons/css3.png";
+import sass from "../assets/icons/Sass.png";
+import tailwind from "../assets/icons/tailwind-css.png";
+import bootstrap from "../assets/icons/bootstrap.png";
+import materialize from "../assets/icons/materializecss.png";
+import javascript from "../assets/icons/javascript.png";
+import react from "../assets/icons/react.png";
+import python from "../assets/icons/python.png";
+import django from "../assets/icons/django.png";
+import c from "../assets/icons/c.png";
+import github from "../assets/icons/github.png";
+
 export default function Tech() {
   const icons = [
     {
       id: 1,
       name: "HTML5",
-      url: "src/assets/icons/html5.png",
+      url: html5,
     },
     {
       id: 2,
       name: "CSS3",
-      url: "src/assets/icons/css3.png",
+      url: css3,
     },
     {
       id: 3,
       name: "Sass",
-      url: "src/assets/icons/sass.png",
+      url: sass,
     },
     {
       id: 4,
       name: "Tailwind",
-      url: "src/assets/icons/tailwind-css.png",
+      url: tailwind,
     },
     {
       id: 5,
       name: "Bootstrap",
-      url: "src/assets/icons/bootstrap.png",
+      url: bootstrap,
     },
     {
       id: 6,
       name: "Materialize",
-      url: "src/assets/icons/materializecss.png",
+      url: materialize,
     },
     {
       id: 7,
       name: "Javascript",
-      url: "src/assets/icons/javascript.png",
+      url: javascript,
     },
     {
       id: 8,
       name: "React",
-      url: "src/assets/icons/react.png",
+      url: react,
     },
     {
       id: 9,
       name: "Python",
-      url: "src/assets/icons/python.png",
+      url: python,
     },
     {
       id: 10,
       name: "Django",
-      url: "src/assets/icons/django.png",
+      url: django,
     },
     {
       id: 11,
       name: "C",
-      url: "src/assets/icons/c.png",
+      url: c,
     },
     {
       id: 12,
       name: "Github",
-      url: "src/assets/icons/github.png",
+      url: github,
     },
   ];
 
@@ -69,7 +83,7 @@ export default function Tech() {
       <motion.article
         variants={slideInFromLeft()}
         initial="initial"
-        animate="animate"
+        whileInView="animate"
         viewport={{ once: true }}
         id="tech"
         className="flex flex-col items-center gap-8 mt-16 px-4"
