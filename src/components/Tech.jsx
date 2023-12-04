@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { slideInFromLeft } from "../utils/motion";
+import { slideInTech } from "../utils/motion";
 
 import html5 from "../assets/icons/html5.png";
 import css3 from "../assets/icons/css3.png";
@@ -81,7 +81,7 @@ export default function Tech() {
   return (
     <>
       <motion.article
-        variants={slideInFromLeft()}
+        variants={slideInTech()}
         initial="initial"
         whileInView="animate"
         viewport={{ once: true }}
