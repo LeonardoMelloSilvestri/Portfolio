@@ -1,3 +1,5 @@
+import topCars from "../assets/img/TopCars.png";
+import emDesenvolvimento from "../assets/img/EmDesenvolvimento.png";
 export default function Projetos() {
   const projetos = [
     {
@@ -6,13 +8,15 @@ export default function Projetos() {
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero odio impedit recusandae nobis.",
       url: "https://LeonardoMelloSilvestri.github.io/TopCars",
+      img: topCars,
     },
     {
       id: 2,
-      name: "Smart Tech",
+      name: "Panda Express",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptatum nulla queue.",
       url: "#",
+      img: emDesenvolvimento,
     },
     {
       id: 3,
@@ -20,13 +24,7 @@ export default function Projetos() {
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quas minus use.",
       url: "#",
-    },
-    {
-      id: 4,
-      name: "Gym Power",
-      description:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur aperiam amet veniam quis.",
-      url: "#",
+      img: emDesenvolvimento,
     },
   ];
 
@@ -39,14 +37,17 @@ export default function Projetos() {
         <h1 className="text-3xl dark:text-bone-100 font-semibold">Projetos</h1>
         <div className="flex flex-wrap gap-6 w-full">
           {projetos.map((projeto) => (
-            <a
+            <div
               key={projeto.id}
               href={projeto.url}
               target="__blank"
-              className="flex justify-center cursor-pointer items-center rounded-2xl flex-auto w-80 h-60 text-white dark:bg-indigo-500 bg-indigo-600"
+              className="flex flex-col justify-center cursor-pointer items-center flex-auto w-80 h-60"
             >
-              <h1 className="text-2xl">{projeto.name}</h1>
-            </a>
+              <img
+                className="object-fill h-full w-full border-indigo-600 border-4 border-solid border-sm rounded-2xl"
+                src={projeto.img}
+              />
+            </div>
           ))}
         </div>
       </article>
