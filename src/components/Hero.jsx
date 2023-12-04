@@ -9,7 +9,7 @@ export default function Hero() {
     <>
       <article
         id="hero"
-        className="flex 100vh flex-wrap justify-center items-center gap-10 mt-12 sm:mt-16 px-8 dark:text-bone-100"
+        className="flex 100vh flex-wrap justify-center items- gap-10 lg:gap-52 mt-12 sm:mt-16 px-8 dark:text-bone-100"
       >
         <motion.div
           variants={slideInFromLeft()}
@@ -53,7 +53,7 @@ export default function Hero() {
             <motion.a
               variants={slideInFromLeft(1.1)}
               target="_blank"
-              href="https://github.com/LeonardoMelloSilvestri"
+              href="https://www.instagram.com/leonardomsilvestri/"
               rel="noreferrer"
             >
               <i className="cursor-pointer hover:text-indigo-600 hover:scale-125 fa-brands fa-square-instagram"></i>
@@ -73,7 +73,7 @@ export default function Hero() {
           animate="animate"
           className=""
         >
-          <img className="hero-img w-60" src={hero} alt="" />
+          <img className="hero-img w-64" src={hero} alt="" />
         </motion.div>
       </article>
     </>
