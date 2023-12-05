@@ -37,7 +37,7 @@ export default function Projetos() {
         <h1 className="text-3xl dark:text-bone-100 font-semibold">Projetos</h1>
         <div className="flex flex-wrap gap-6 w-full">
           {projetos.map((projeto) => (
-            <div
+            <a
               key={projeto.id}
               href={projeto.url}
               target="__blank"
@@ -47,7 +47,7 @@ export default function Projetos() {
                 className="object-fill h-full w-full border-indigo-600 border-4 border-solid border-sm rounded-2xl"
                 src={projeto.img}
               />
-            </div>
+            </a>
           ))}
         </div>
       </article>
