@@ -1,4 +1,5 @@
 import topCars from "../assets/img/TopCars.png";
+import pandaExpress from "../assets/img/PandaExpress.png";
 import emDesenvolvimento from "../assets/img/EmDesenvolvimento.png";
 export default function Projetos() {
   const projetos = [
@@ -16,7 +17,7 @@ export default function Projetos() {
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptatum nulla queue.",
       url: "#",
-      img: emDesenvolvimento,
+      img: pandaExpress,
     },
     {
       id: 3,
