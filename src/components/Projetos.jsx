@@ -1,5 +1,5 @@
 import topCars from "../assets/img/TopCars.png";
-import pandaExpress from "../assets/img/PandaExpress.png";
+import pandaExpress from "../assets/img/PandaExpress.jpg";
 import emDesenvolvimento from "../assets/img/EmDesenvolvimento.png";
 export default function Projetos() {
   const projetos = [
