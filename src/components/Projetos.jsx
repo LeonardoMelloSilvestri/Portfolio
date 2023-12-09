@@ -16,7 +16,7 @@ export default function Projetos() {
       name: "Panda Express",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptatum nulla queue.",
-      url: "#",
+      url: "https://LeonardoMelloSilvestri.github.io/PandaExpress",
       img: pandaExpress,
     },
     {
