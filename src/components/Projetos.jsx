@@ -1,6 +1,6 @@
 import topCars from "../assets/img/TopCars.png";
 import pandaExpress from "../assets/img/PandaExpress.jpg";
-import emDesenvolvimento from "../assets/img/EmDesenvolvimento.png";
+import wwii from "../assets/img/wwii.jpg";
 export default function Projetos() {
   const projetos = [
     {
@@ -21,11 +21,11 @@ export default function Projetos() {
     },
     {
       id: 3,
-      name: "Space Wars",
+      name: "World War II",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quas minus use.",
-      url: "#",
-      img: emDesenvolvimento,
+      url: "https://LeonardoMelloSilvestri.github.io/WorldWarII",
+      img: wwii,
     },
   ];
 
@@ -45,7 +45,7 @@ export default function Projetos() {
               className="flex flex-col justify-center cursor-pointer items-center flex-auto w-80 h-60"
             >
               <img
-                className="object-fill h-full w-full border-indigo-600 border-4 border-solid border-sm rounded-2xl"
+                className="object-fill h-full w-full border-indigo-600 border-2 border-solid border-sm rounded-2xl"
                 src={projeto.img}
               />
             </a>
