@@ -9,7 +9,7 @@ export default function Hero() {
     <>
       <article
         id="hero"
-        className="flex 100vh flex-wrap justify-center items- gap-10 lg:gap-52 mt-12 sm:mt-16 px-8 dark:text-bone-100"
+        className="flex 100vh flex-wrap justify-center gap-10 lg:gap-52 mt-12 sm:mt-16 px-8 dark:text-bone-100"
       >
         <motion.div
           variants={slideInFromLeft()}

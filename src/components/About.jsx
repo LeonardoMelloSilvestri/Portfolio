@@ -11,7 +11,7 @@ export default function About() {
             Sou um jovem completamente apaixonado por tecnologia, especialmente
             Front-End. Atualmente estou buscando uma oportunidade de ingressar
             nessa área tão sonhada. Tenho estudado e praticado muito, com o
-            objetivo de me aperfeiçoar nas tecnologias mais mordernas. Estou
+            objetivo de me aperfeiçoar nas tecnologias mais modernas. Estou
             muito confiante em minhas habilidades e me sinto pronto para dar o
             próximo passo.
           </p>
