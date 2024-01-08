@@ -47,7 +47,7 @@ export default function Contact() {
           </div>
         </div>
         <div>
-          <img className="w-96" src={contactImg} alt="" />
+          <img className="w-[28rem]" src={contactImg} alt="" />
         </div>
       </article>
     </>
