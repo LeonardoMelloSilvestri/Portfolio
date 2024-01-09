@@ -68,7 +68,7 @@ export default function Projetos() {
                 {projeto.tools.map((tool, index) => (
                   <span
                     key={index}
-                    className="rounded-md bg-indigo-500 px-2 py-1 text-sm font-medium text-white ring-1 ring-inset ring-indigo-600"
+                    className="rounded-md dark:bg-indigo-500 bg-indigo-600 px-2 py-1 text-sm font-medium text-white ring-1 ring-inset dark:ring-indigo-600 ring-indigo-500"
                   >
                     {tool}
                   </span>
