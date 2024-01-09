@@ -39,7 +39,7 @@ export default function Contact() {
             </a>
             <a
               target="_blank"
-              href="https://github.com/LeonardoMelloSilvestri"
+              href="https://www.instagram.com/leonardomsilvestri/"
               rel="noreferrer"
             >
               <i className="cursor-pointer hover:text-indigo-600 hover:scale-125 fa-brands fa-square-instagram"></i>
