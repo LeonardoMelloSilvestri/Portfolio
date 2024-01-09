@@ -1,5 +1,5 @@
 import hero from "../assets/img/LeonardoIndigo.png";
-import curriculum from "../assets/files/LeonardoSilvestri.pdf";
+import curriculum from "../assets/files/LeonardoMelloSilvestri.pdf";
 
 import { motion } from "framer-motion";
 import { slideInFromLeft, slideInFromRight } from "../utils/motion";
