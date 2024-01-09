@@ -3,7 +3,7 @@ import { slideInTech } from "../utils/motion";
 
 import html5 from "../assets/icons/html5.png";
 import css3 from "../assets/icons/css3.png";
-import sass from "../assets/icons/Sass.png";
+import chakraUI from "../assets/icons/chakraUI.png";
 import tailwind from "../assets/icons/tailwind-css.png";
 import bootstrap from "../assets/icons/bootstrap.png";
 import materialize from "../assets/icons/materializecss.png";
@@ -28,8 +28,8 @@ export default function Tech() {
     },
     {
       id: 3,
-      name: "Sass",
-      url: sass,
+      name: "Chakra UI",
+      url: chakraUI,
     },
     {
       id: 4,
@@ -91,9 +91,14 @@ export default function Tech() {
         <h1 className="text-3xl dark:text-bone-100 font-semibold">
           Tech Stack
         </h1>
-        <div className="flex flex-wrap justify-center items-center text-3xl gap-6 [&>*]:w-16">
+        <div className="flex flex-wrap justify-center items-center gap-6 [&>*]:w-16">
           {icons.map((icon) => (
-            <img key={icon.id} src={icon.url} alt="" />
+            <div key={icon.id} className="relative cursor-pointer">
+              <img src={icon.url} alt="" />
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 dark:bg-indigo-500 bg-indigo-600 text-white p-2 rounded opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <p className="text-xl font-semibold">{icon.name}</p>
+              </div>
+            </div>
           ))}
         </div>
       </motion.article>
