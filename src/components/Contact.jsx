@@ -5,7 +5,7 @@ export default function Contact() {
     <>
       <article
         id="contato"
-        className="flex flex-wrap gap-10 lg:gap-52 dark:text-bone-100 justify-center px-8 mt-24"
+        className="flex flex-wrap gap-10 lg:gap-24 dark:text-bone-100 justify-center px-8 mt-24"
       >
         <div className="flex flex-col">
           <h1 className="text-3xl font-semibold">
@@ -47,7 +47,7 @@ export default function Contact() {
           </div>
         </div>
         <div>
-          <img className="w-[28rem]" src={contactImg} alt="" />
+          <img className="w-[29rem]" src={contactImg} alt="" />
         </div>
       </article>
     </>
