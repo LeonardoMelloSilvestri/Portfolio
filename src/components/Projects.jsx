@@ -2,6 +2,10 @@ import topCars from "../assets/img/topCars.jpg";
 import pandaExpress from "../assets/img/PandaExpress.jpg";
 import wwii from "../assets/img/wwii.jpg";
 import spaceWars2 from "../assets/img/spaceWars2.jpg";
+
+import { motion } from "framer-motion";
+import { slideInFromRight } from "../utils/motion";
+
 export default function Projetos() {
   const projetos = [
     {
@@ -45,7 +49,11 @@ export default function Projetos() {
 
   return (
     <>
-      <article
+      <motion.article
+        variants={slideInFromRight(0.3)}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true, amount: 0.6 }}
         id="projetos"
         className="flex flex-col items-center gap-8 mt-24 px-8 lg:px-14"
       >
@@ -77,7 +85,7 @@ export default function Projetos() {
             </div>
           ))}
         </div>
-      </article>
+      </motion.article>
     </>
   );
 }

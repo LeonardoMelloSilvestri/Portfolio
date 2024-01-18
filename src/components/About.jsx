@@ -1,7 +1,14 @@
+import { motion } from "framer-motion";
+import { slideInFromLeft } from "../utils/motion";
+
 export default function About() {
   return (
     <>
-      <article
+      <motion.article
+        variants={slideInFromLeft(0.3)}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
         id="about"
         className="flex text-white dark:bg-indigo-500 bg-indigo-600 justify-center py-20 mt-24 w-full"
       >
@@ -16,7 +23,7 @@ export default function About() {
             próximo passo.
           </p>
         </div>
-      </article>
+      </motion.article>
     </>
   );
 }
