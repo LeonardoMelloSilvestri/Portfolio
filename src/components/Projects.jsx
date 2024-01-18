@@ -53,12 +53,12 @@ export default function Projetos() {
         variants={slideInFromRight(0.3)}
         initial="initial"
         whileInView="animate"
-        viewport={{ once: true, amount: 0.6 }}
+        viewport={{ once: true }}
         id="projetos"
         className="flex flex-col items-center gap-8 mt-24 px-8 lg:px-14"
       >
         <h1 className="text-3xl dark:text-bone-100 font-semibold">Projetos</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 xl:gap-4 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 xl:gap-4 max-w-[1536px]">
           {projetos.map((projeto) => (
             <div
               key={projeto.id}

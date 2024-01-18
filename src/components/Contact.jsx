@@ -13,7 +13,7 @@ export default function Contact() {
           variants={slideInFromLeft(0.3)}
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true, amount: 0.6 }} className="flex flex-col">
+          viewport={{ once: true }} className="flex flex-col">
           <h1 className="text-3xl font-semibold">
             E aí, vamos trabalhar juntos?
           </h1>
@@ -56,7 +56,7 @@ export default function Contact() {
           variants={slideInFromRight(0.3)}
           initial="initial"
           whileInView="animate"
-          viewport={{ once: true, amount: 0.6 }}>
+          viewport={{ once: true }}>
           <img className="w-[29rem]" src={contactImg} alt="" />
         </motion.div>
       </article>
