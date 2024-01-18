@@ -1,1 +1,0 @@
-import{j as e}from"./index-bdaf228f.js";function r(){return e.jsx(e.Fragment,{children:e.jsx("footer",{className:"w-full dark:bg-indigo-500 bg-indigo-600 p-4 mt-16",children:e.jsx("span",{className:"flex justify-center",children:e.jsx("h1",{className:"text-lg text-white font-semibold",children:"Handcrafted by Leonardo Mello Silvestri"})})})})}export{r as default};
